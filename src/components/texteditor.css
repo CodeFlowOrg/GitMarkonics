@@ -1,0 +1,15 @@
+.DraftEditor-root{
+background-color: black;
+color:white;
+height:75vh;
+text-align:left;
+border: 1px solid white ;
+margin: 14px;
+padding:20px;
+overflow-y:auto;
+}
+
+.b-button{
+    margin:2px;
+    margin-bottom:0;
+}
