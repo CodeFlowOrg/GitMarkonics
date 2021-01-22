@@ -16,9 +16,18 @@ const  dkl = "hello";
     super(props);
     this.state = {editorState: EditorState.createEmpty()};
     this.onChange = editorState => {this.setState({editorState});
-    this.file =stateToHTML(this.state.editorState.getCurrentContent());
+     var value =stateToHTML(this.state.editorState.getCurrentContent());
+    this.file=this.replacer(value);
   };
  
+
+  }
+  replacer(input)
+  {
+ console.log(input);
+ input=input.replace(/<p>/g, ' ').replace(/<\/p>/g, '</br>').replace(/<strong>/g, '**').replace(/<\/strong>/g, '**').replace(/&nbsp;/g," ");  
+ 
+ return input;
   }
  
   _onBoldClick() {
