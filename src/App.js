@@ -1,12 +1,12 @@
-import './App.css';
-import  Texteditor from './components/texteditor';
+import "./App.css";
+import Texteditor from "./components/texteditor";
+import NavHeader from "./components/nav-head";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      Beautiful readme.md
-      </header> 
-      <Texteditor/>
+      <NavHeader />
+      <Texteditor />
     </div>
   );
 }
