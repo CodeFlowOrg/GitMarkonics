@@ -62,9 +62,9 @@ export default class Texteditor extends Component {
         <Flex color="black">
           <Box
             flex="1"
-            bg="tomato"
-            border="1px"
-            borderColor="gray.10"
+            bg="#F0A6CA"
+            border="0.5px"
+            borderColor="#F0E6EF"
             p={1}
             m={2}
           >

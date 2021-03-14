@@ -2,12 +2,15 @@
  .editors-panel{
 background-color: white;
 color:  Black;
-height:75vh;
+height:86.5vh;
 
 text-align:left;
 border: 1px solid white ;
-margin: 14px;
+margin-left: 4px; margin-right:4px;
+margin-top: 5px;margin-bottom: 5px;
 padding:20px;
-overflow-y:auto;
+
+overflow-y: auto;
+
 }
 
