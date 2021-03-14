@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Beautiful-Readme/static/css/main.f5cb86c1.chunk.css",
-    "main.js": "/Beautiful-Readme/static/js/main.8b61c01e.chunk.js",
-    "main.js.map": "/Beautiful-Readme/static/js/main.8b61c01e.chunk.js.map",
-    "runtime-main.js": "/Beautiful-Readme/static/js/runtime-main.6773d012.js",
-    "runtime-main.js.map": "/Beautiful-Readme/static/js/runtime-main.6773d012.js.map",
+    "main.css": "/Beautiful-Readme/static/css/main.024ad0b6.chunk.css",
+    "main.js": "/Beautiful-Readme/static/js/main.37a00463.chunk.js",
+    "main.js.map": "/Beautiful-Readme/static/js/main.37a00463.chunk.js.map",
+    "runtime-main.js": "/Beautiful-Readme/static/js/runtime-main.ce91d3bb.js",
+    "runtime-main.js.map": "/Beautiful-Readme/static/js/runtime-main.ce91d3bb.js.map",
     "static/css/2.e426f036.chunk.css": "/Beautiful-Readme/static/css/2.e426f036.chunk.css",
-    "static/js/2.ce6f0cbc.chunk.js": "/Beautiful-Readme/static/js/2.ce6f0cbc.chunk.js",
-    "static/js/2.ce6f0cbc.chunk.js.map": "/Beautiful-Readme/static/js/2.ce6f0cbc.chunk.js.map",
-    "static/js/3.c0832b99.chunk.js": "/Beautiful-Readme/static/js/3.c0832b99.chunk.js",
-    "static/js/3.c0832b99.chunk.js.map": "/Beautiful-Readme/static/js/3.c0832b99.chunk.js.map",
+    "static/js/2.97a39a98.chunk.js": "/Beautiful-Readme/static/js/2.97a39a98.chunk.js",
+    "static/js/2.97a39a98.chunk.js.map": "/Beautiful-Readme/static/js/2.97a39a98.chunk.js.map",
+    "static/js/3.e0c30a3d.chunk.js": "/Beautiful-Readme/static/js/3.e0c30a3d.chunk.js",
+    "static/js/3.e0c30a3d.chunk.js.map": "/Beautiful-Readme/static/js/3.e0c30a3d.chunk.js.map",
     "index.html": "/Beautiful-Readme/index.html",
     "static/css/2.e426f036.chunk.css.map": "/Beautiful-Readme/static/css/2.e426f036.chunk.css.map",
-    "static/css/main.f5cb86c1.chunk.css.map": "/Beautiful-Readme/static/css/main.f5cb86c1.chunk.css.map",
-    "static/js/2.ce6f0cbc.chunk.js.LICENSE.txt": "/Beautiful-Readme/static/js/2.ce6f0cbc.chunk.js.LICENSE.txt"
+    "static/css/main.024ad0b6.chunk.css.map": "/Beautiful-Readme/static/css/main.024ad0b6.chunk.css.map",
+    "static/js/2.97a39a98.chunk.js.LICENSE.txt": "/Beautiful-Readme/static/js/2.97a39a98.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.6773d012.js",
+    "static/js/runtime-main.ce91d3bb.js",
     "static/css/2.e426f036.chunk.css",
-    "static/js/2.ce6f0cbc.chunk.js",
-    "static/css/main.f5cb86c1.chunk.css",
-    "static/js/main.8b61c01e.chunk.js"
+    "static/js/2.97a39a98.chunk.js",
+    "static/css/main.024ad0b6.chunk.css",
+    "static/js/main.37a00463.chunk.js"
   ]
 }
