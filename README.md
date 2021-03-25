@@ -1,12 +1,8 @@
 # WYSIWYG-Markdown
 
-This project is developed to create beautifull documentation of your projects by providing you with a readme.md file editor and downloader
-
-DESIGN IN ISSUES !!..
+This project is aimed to build an integrated environment for Github Flavoured markdown files .
 
 
-<<<<<<< HEAD
-=======
 ## Contributors
 <table>
   <tr>
@@ -19,4 +15,3 @@ DESIGN IN ISSUES !!..
 </table>
 
 
->>>>>>> upstream/master
