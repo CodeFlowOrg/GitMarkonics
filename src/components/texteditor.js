@@ -12,11 +12,11 @@ import Output from './ouput'
 export default class Texteditor extends Component {
   constructor(props) {
     super(props);
-    this.state = { editorState: EditorState.createEmpty() };
-    this.onChange = (editorState) => {
-      this.setState({ editorState });
-      var value = stateToHTML(this.state.editorState.getCurrentContent());
-      this.file = this.replacer(value);
+    this.state = { editorState: EditorState.createEmpty(),file:'' };
+    this.onChange = async (editorState) => {
+     await this.setState({ editorState });
+      var value =await stateToHTML(this.state.editorState.getCurrentContent());
+      this.setState({file: this.replacer(value)});
       // console.log(convertToRaw(this.state.editorState.getCurrentContent()));
     };
   }
@@ -90,7 +90,7 @@ export default class Texteditor extends Component {
               />
             </Box>
           </Box>
-          <Output file ={this.file}/>
+          <Output file ={this.state.file}/>
         </Flex>
          
       </div>
