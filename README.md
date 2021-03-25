@@ -1,6 +1,6 @@
 # WYSIWYG-Markdown
 
-This project is developed to create beautifull documentation of your projects by providing you with a readme.md file editor and downloader
+This Project is Developed to create Beautiful Documentation of your Projects by Providing you with a Readme.md File editor and Downloader.
 
 DESIGN IN ISSUES !!..
 
