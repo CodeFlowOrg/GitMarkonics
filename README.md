@@ -1,4 +1,4 @@
-# WYSIWYG-Markdown
+# GitMarkonics:- WYSIWYG-Markdown-editor
 This project is focused on solution to maintain large documentation of their project without a need to look for markdown file previewer and garbage commits at Github. It is an integration MARKDOWN FILE PREVIEWER with a CLI which allows user to make automated pull request repositories. This would help them to generate markdown files with  APIs like Github status, Wakatime, Project-language-analyser and React-emoticons.  
 Markdown. files are the standard format of documentation by   GitHub,  many open source initiatives.  
 The project delivers user with potential features of WYSIWYG tools and markdown files. This is an inspiration from Facebook Rich-text-editing Draft.js and Github Flavoured Readme. 
