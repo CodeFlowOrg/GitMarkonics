@@ -1,6 +1,7 @@
 .nav_header {
+  z-index: 1;
   background-color: #210124;
 
   font-size: calc(10px + 2vmin);
-  color: white;
+ 
 }
