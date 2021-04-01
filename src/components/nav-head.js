@@ -13,13 +13,13 @@ import {
   IconButton,
 } from "@chakra-ui/react";
 import { BiMenu } from "react-icons/bi";
-import logo from "../assets/white heading.png";
+import logo from "../assets/GitMarkonics_white.png";
 
 function NavHeader() {
   return (
     <Box className="nav_header" p={1}>
-      <Flex direction="row" spacing={2}>
-        <Menu>
+      <Flex direction="row ">
+        {/* <Menu>
           <MenuButton
             as={IconButton}
             aria-label="Options"
@@ -39,8 +39,8 @@ function NavHeader() {
             <MenuItem command="⌘⇧N">Open Closed Tab</MenuItem>
             <MenuItem command="⌘O">Open File...</MenuItem>
           </MenuList>
-        </Menu>
-        <img src={logo} alt="heading" width="120px" class="center" />
+        </Menu> */}
+        <img src={logo} alt="heading" width="80px" />
         <Spacer />
         <Stack direction="row" spacing={2}>
           <Button leftIcon={<GrLogin />} colorScheme="pink" variant="solid">
