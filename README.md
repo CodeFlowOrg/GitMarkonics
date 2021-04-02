@@ -61,7 +61,7 @@ To start contributing, follow the below guidelines:
 
      $ git checkout -b <branch_name>
 
-**4.** Make your changes
+**4.** Make your changes to it
 
 **5.** Add and commit your changes
 
