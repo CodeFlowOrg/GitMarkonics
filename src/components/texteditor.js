@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 // Importing Module
-import { Editor, EditorState, RichUtils } from "draft-js";
+import { Editor } from "react-draft-wysiwyg";
+import { EditorState, RichUtils } from "draft-js";
 import "draft-js/dist/Draft.css";
 import "./texteditor.css";
 import { convertToRaw } from "draft-js";
