@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 // Importing Module
-import { Editor } from "react-draft-wysiwyg";
-import { EditorState, RichUtils } from "draft-js";
+import {  Editor,EditorState, RichUtils } from "draft-js";
 import "draft-js/dist/Draft.css";
 import "./texteditor.css";
-import { convertToRaw } from "draft-js";
+// import { convertToRaw } from "draft-js"; //important 
 import { stateToHTML } from "draft-js-export-html";
-import { Flex, Center, Text, Box, Button, Stack, Icon } from "@chakra-ui/react";
+import { Flex, Box, Button, Stack, Icon } from "@chakra-ui/react";
 import { GoBold, GoItalic, GoDesktopDownload } from "react-icons/go";
 import Output from './ouput'
 
