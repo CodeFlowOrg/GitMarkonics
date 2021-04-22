@@ -10,7 +10,20 @@ function App() {
       <Router>
     <Switch>
         <Route path='/login'>
-        <Login />
+        <Login
+        headText='USER LOGIN'
+        btnText='LOGIN'
+        linkText='Forgot password?'
+        register=''
+         />
+        </Route>
+        <Route path='/register'>
+        <Login 
+          headText='REGISTER HERE'
+          btnText='REGISTER'
+          linkText='Already a user?'
+          register='register'
+        />
         </Route>
       <Route path='/'>
       <NavHeader />

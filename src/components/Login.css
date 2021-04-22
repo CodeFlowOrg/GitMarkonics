@@ -12,6 +12,9 @@
 .login__container{
     width: 520px;
     background-color: #fff;
+    box-shadow: 1px 7px 13px 0px rgba(0,0,0,0.51);
+-webkit-box-shadow: 1px 7px 13px 0px rgba(0,0,0,0.51);
+-moz-box-shadow: 1px 7px 13px 0px rgba(0,0,0,0.51);
 }
 .login__containerTop{
     width: 100%;
@@ -50,7 +53,7 @@
     margin-top: 27px !important;
 }
 .login__input{
-    margin-top: 18px !important;
+    margin-top: 10px !important;
 }
 .loginBtn{
 box-shadow: 5px 5px 5px -4px rgb(255, 0, 238);

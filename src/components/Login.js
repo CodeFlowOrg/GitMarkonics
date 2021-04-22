@@ -1,4 +1,5 @@
 import React from "react";
+import {NavLink} from 'react-router-dom'
 import "./Login.css";
 import {
   Button,
@@ -13,7 +14,7 @@ import {
 import { RiAccountPinBoxFill } from "react-icons/ri";
 import { RiLockPasswordFill } from "react-icons/ri";
 
-function Login() {
+function Login({headText, btnText, linkText, register}) {
   return (
     <div className="login">
       <div className="login__container">
@@ -30,10 +31,16 @@ function Login() {
               color="blue.500"
               fontWeight="semibold"
               py={3}
-            >
-              USER LOGIN
+              >
+              {headText}
             </Heading>
-            <InputGroup w='95%' borderRadius="full" bgColor="gray.200">
+              {register &&
+              <HStack className='login__input' w='100%'>
+                <Input   borderRadius='full' backgroundColor='gray.200' placeholder="First name" />
+                <Input  borderRadius='full' backgroundColor='gray.200' placeholder="Last name" />
+              </HStack>
+              }
+            <InputGroup w='100%' borderRadius="full" bgColor="gray.200">
               <InputLeftElement
                 margin="0 20px"
                 pointerEvents="none"
@@ -43,12 +50,12 @@ function Login() {
               />
               <Input
                 borderRadius="full"
-                type="tel"
+                type="text"
                 placeholder="Username"
                 paddingLeft="60px"
               />
             </InputGroup>
-            <InputGroup className='login__input' w='95%' borderRadius="full" bgColor="gray.200">
+            <InputGroup className='login__input' w='100%' borderRadius="full" bgColor="gray.200">
               <InputLeftElement
                 margin="0 20px"
                 pointerEvents="none"
@@ -57,12 +64,30 @@ function Login() {
                 }
               />
               <Input
-                type="tel"
+                type="password"
                 borderRadius="full"
                 placeholder="Password"
                 paddingLeft="60px"
               />
             </InputGroup>
+            {
+              register && 
+              <InputGroup className='login__input' w='100%' borderRadius="full" bgColor="gray.200">
+              <InputLeftElement
+                margin="0 20px"
+                pointerEvents="none"
+                children={
+                  <RiLockPasswordFill color="#C6C6E8" fontSize="2.1rem" />
+                }
+              />
+              <Input
+                type="password"
+                borderRadius="full"
+                placeholder="Confirm Password"
+                paddingLeft="60px"
+              />
+            </InputGroup>
+            }
             <HStack className="login__btn" alignSelf='flex-end' >
             <Button
               colorScheme="pink"
@@ -71,11 +96,20 @@ function Login() {
               fontWeight="bold"
               className='loginBtn'
             >
-              LOGIN
+              {btnText}
             </Button>
-            <Link fontSize='sm' textDecoration="underline" color="blue">
-              Forgot password?
-            </Link>
+            {register ?
+            <NavLink to='/login'>
+           <Link  fontSize='sm' textDecoration="underline" color="blue">
+           {linkText}
+         </Link>
+         </NavLink>:
+         <NavLink to='/register'>
+          <Link to='/register' fontSize='sm' textDecoration="underline" color="blue">
+          {linkText}
+        </Link>  
+        </NavLink>
+          }
             </HStack>
           </VStack>
         </div>
