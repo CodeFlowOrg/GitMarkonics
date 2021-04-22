@@ -7,6 +7,7 @@ import {
   Stack,
   Box
 } from "@chakra-ui/react";
+import {Link} from 'react-router-dom'
 
 import logo from "../assets/GitMarkonics_white.png";
 
@@ -18,9 +19,11 @@ function NavHeader() {
         <img src={logo} alt="heading" width="80px" />
         <Spacer />
         <Stack direction="row" spacing={2}>
+          <Link to='/login'>
           <Button leftIcon={<GrLogin />} colorScheme="pink" variant="solid">
             Login
           </Button>
+          </Link>
           <Button colorScheme="white" variant="outline">
             Register
           </Button>
