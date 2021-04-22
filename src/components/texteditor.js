@@ -6,7 +6,7 @@ import "./texteditor.css";
 // import { convertToRaw } from "draft-js"; //important 
 import { stateToHTML } from "draft-js-export-html";
 import { Flex, Box, Button, Stack, Icon } from "@chakra-ui/react";
-import { GoBold, GoItalic, GoDesktopDownload } from "react-icons/go";
+import { GoBold, GoItalic, GoDesktopDownload, GoQuote, GoTextSize } from "react-icons/go";
 import Output from './ouput'
 
 export default class Texteditor extends Component {
@@ -29,7 +29,11 @@ export default class Texteditor extends Component {
       .replace(/<br>/g, "")
       .replace(/<strong>/g, "**")
       .replace(/<\/strong>/g, "**")
-      .replace(/&nbsp;/g, " ");
+      .replace(/&nbsp;/g, " ")
+      .replace(/<h1>/g, "# ")
+      .replace(/<\/h1>/g, " #")
+      .replace(/<blockquote>/g, ">")
+      .replace(/<\/blockquote>/g, " ");
     input = input.replace(/<em>/g, "_").replace(/<\/em>/g, "_");
     return input;
   }
@@ -55,7 +59,13 @@ export default class Texteditor extends Component {
     hiddenElement.download = "README.md";
     hiddenElement.click();
   }
-
+  _onTextSizeClick() {
+    this.onChange(RichUtils.toggleBlockType(this.state.editorState, "header-one"));
+  }
+  _onBlockQuoteClick() {
+    this.onChange(RichUtils.toggleBlockType(this.state.editorState, "blockquote"));
+  }
+  
   render() {
     return (
       <div>
@@ -76,7 +86,12 @@ export default class Texteditor extends Component {
                 {" "}
                 <Icon as={GoItalic} />
               </Button>
-
+              <Button onClick={this._onTextSizeClick.bind(this)}>
+                <Icon as={GoTextSize} />
+              </Button>
+              <Button onClick={this._onBlockQuoteClick.bind(this)}>
+                <Icon as={GoQuote} />
+              </Button>
               <Button onClick={this.onDownload.bind(this)}>
                 <Icon as={GoDesktopDownload} /> &nbsp;Download
               </Button>
