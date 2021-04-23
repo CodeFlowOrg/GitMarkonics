@@ -88,7 +88,7 @@ To start contributing, follow the below guidelines:
 
 **4** Finally Merging with Upstream Repository
 
-    $ git merge upstream/main
+    $ git merge upstream/master
 
 # GitMarkonics:- WYSIWYG-Markdown-editor
 This project is focused on solution to maintain large documentation of their project without a need to look for markdown file previewer and garbage commits at Github.
