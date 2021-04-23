@@ -23,8 +23,7 @@ function Login() {
           <h4>Welcome to the website</h4>
         </div>
         <div className="login__containerBottom">
-          <VStack className='input__container' w="65%"
-          m="auto">
+          <VStack className="input__container" w="65%" m="auto">
             <Heading
               fontSize="1.2rem"
               color="blue.500"
@@ -33,7 +32,7 @@ function Login() {
             >
               USER LOGIN
             </Heading>
-            <InputGroup w='95%' borderRadius="full" bgColor="gray.200">
+            <InputGroup w="95%" borderRadius="full" bgColor="gray.200">
               <InputLeftElement
                 margin="0 20px"
                 pointerEvents="none"
@@ -48,7 +47,12 @@ function Login() {
                 paddingLeft="60px"
               />
             </InputGroup>
-            <InputGroup className='login__input' w='95%' borderRadius="full" bgColor="gray.200">
+            <InputGroup
+              className="login__input"
+              w="95%"
+              borderRadius="full"
+              bgColor="gray.200"
+            >
               <InputLeftElement
                 margin="0 20px"
                 pointerEvents="none"
@@ -63,19 +67,19 @@ function Login() {
                 paddingLeft="60px"
               />
             </InputGroup>
-            <HStack className="login__btn" alignSelf='flex-end' >
-            <Button
-              colorScheme="pink"
-              px="6"
-              size="sm"
-              fontWeight="bold"
-              className='loginBtn'
-            >
-              LOGIN
-            </Button>
-            <Link fontSize='sm' textDecoration="underline" color="blue">
-              Forgot password?
-            </Link>
+            <HStack className="login__btn" alignSelf="flex-end">
+              <Button
+                colorScheme="pink"
+                px="6"
+                size="sm"
+                fontWeight="bold"
+                className="loginBtn"
+              >
+                LOGIN
+              </Button>
+              <Link fontSize="sm" textDecoration="underline" color="blue">
+                Forgot password?
+              </Link>
             </HStack>
           </VStack>
         </div>
