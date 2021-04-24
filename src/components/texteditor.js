@@ -17,6 +17,7 @@ const headersMap = [
   { label: "Header 3", style: "header-three" },
   { label: "Header 4", style: "header-four" },
   { label: "Header 5", style: "header-five" },
+  { label: "Header 6", style: "header-six" }
 ];
 export default class Texteditor extends Component {
   constructor(props) {
@@ -53,6 +54,8 @@ export default class Texteditor extends Component {
       .replace(/<\/h4>/g, "")
       .replace(/<h5>/g, "##### ")
       .replace(/<\/h5>/g, "")
+      .replace(/<h6>/g, "###### ")
+      .replace(/<\/h6>/g, "")
       .replace(/<blockquote>/g, ">")
       .replace(/<\/blockquote>/g, " ");
     input = input.replace(/<em>/g, "_").replace(/<\/em>/g, "_");
