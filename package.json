@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/core": "^7.13.16",
     "@chakra-ui/react": "^1.6.0",
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
@@ -17,6 +18,7 @@
     "framer-motion": "^4.1.9",
     "marked": "^2.0.3",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-refresh": "^0.10.0",
     "react-router-dom": "^5.2.0",
