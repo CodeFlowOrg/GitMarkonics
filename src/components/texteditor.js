@@ -1,22 +1,28 @@
 import React, { Component } from "react";
 // Importing Module
-import {  Editor,EditorState, RichUtils } from "draft-js";
+import { Editor, EditorState, RichUtils } from "draft-js";
 import "draft-js/dist/Draft.css";
 import "./texteditor.css";
-// import { convertToRaw } from "draft-js"; //important 
+// import { convertToRaw } from "draft-js"; //important
 import { stateToHTML } from "draft-js-export-html";
 import { Flex, Box, Button, Stack, Icon } from "@chakra-ui/react";
-import { GoBold, GoItalic, GoDesktopDownload, GoQuote, GoTextSize } from "react-icons/go";
-import Output from './ouput'
+import {
+  GoBold,
+  GoItalic,
+  GoDesktopDownload,
+  GoQuote,
+  GoTextSize,
+} from "react-icons/go";
+import Output from "./ouput";
 
 export default class Texteditor extends Component {
   constructor(props) {
     super(props);
-    this.state = { editorState: EditorState.createEmpty(),file:'' };
+    this.state = { editorState: EditorState.createEmpty(), file: "" };
     this.onChange = async (editorState) => {
-     await this.setState({ editorState });
-      var value =await stateToHTML(this.state.editorState.getCurrentContent());
-      this.setState({file: this.replacer(value)});
+      await this.setState({ editorState });
+      var value = await stateToHTML(this.state.editorState.getCurrentContent());
+      this.setState({ file: this.replacer(value) });
       // console.log(convertToRaw(this.state.editorState.getCurrentContent()));
     };
   }
@@ -31,7 +37,7 @@ export default class Texteditor extends Component {
       .replace(/<\/strong>/g, "**")
       .replace(/&nbsp;/g, " ")
       .replace(/<h1>/g, "# ")
-      .replace(/<\/h1>/g, " #")
+      .replace(/<\/h1>/g, "")
       .replace(/<blockquote>/g, ">")
       .replace(/<\/blockquote>/g, " ");
     input = input.replace(/<em>/g, "_").replace(/<\/em>/g, "_");
@@ -60,12 +66,16 @@ export default class Texteditor extends Component {
     hiddenElement.click();
   }
   _onTextSizeClick() {
-    this.onChange(RichUtils.toggleBlockType(this.state.editorState, "header-one"));
+    this.onChange(
+      RichUtils.toggleBlockType(this.state.editorState, "header-one")
+    );
   }
   _onBlockQuoteClick() {
-    this.onChange(RichUtils.toggleBlockType(this.state.editorState, "blockquote"));
+    this.onChange(
+      RichUtils.toggleBlockType(this.state.editorState, "blockquote")
+    );
   }
-  
+
   render() {
     return (
       <div>
@@ -105,9 +115,8 @@ export default class Texteditor extends Component {
               />
             </Box>
           </Box>
-          <Output file ={this.state.file}/>
+          <Output file={this.state.file} />
         </Flex>
-         
       </div>
     );
   }
