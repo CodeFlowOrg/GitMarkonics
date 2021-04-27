@@ -28,10 +28,12 @@
      background-size: cover;
      width: 257px;
      height: 73.3px;
+     position: relative;
+     top: 14px;
   
   }
   .Register__containerTop p{
-      color:#F3A9BA;
+      color: #f3cbcb;
       font-weight: 400;
       font-size: 0.95rem;
   }

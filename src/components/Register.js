@@ -32,17 +32,19 @@ function Register() {
             >
               Register HERE
             </Heading>
-            <InputGroup w="50%" borderRadius="full" bgColor="gray.200">
+            <InputGroup w="95%" borderRadius="full">
               <Input
                 borderRadius="full"
                 type="tel"
-                placeholder="Username"
+                placeholder="First Name"
+                bgColor="gray.200"
               />
               <Input
                 borderRadius="full"
                 type="tel"
-                placeholder="Username"
-                paddingLeft="60px"
+                placeholder="Last Name"
+                bgColor="gray.200"
+                marginLeft="4px"
               />
             </InputGroup>
             <InputGroup w="95%" borderRadius="full" bgColor="gray.200">
@@ -77,6 +79,26 @@ function Register() {
                 type="tel"
                 borderRadius="full"
                 placeholder="Password"
+                paddingLeft="60px"
+              />
+            </InputGroup>
+            <InputGroup
+              className="Register__input"
+              w="95%"
+              borderRadius="full"
+              bgColor="gray.200"
+            >
+              <InputLeftElement
+                margin="0 20px"
+                pointerEvents="none"
+                children={
+                  <RiLockPasswordFill color="#C6C6E8" fontSize="2.1rem" />
+                }
+              />
+              <Input
+                type="tel"
+                borderRadius="full"
+                placeholder=" Confirm Password"
                 paddingLeft="60px"
               />
             </InputGroup>
