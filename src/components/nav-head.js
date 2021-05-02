@@ -18,9 +18,11 @@ function NavHeader() {
               Login
             </Button>
           </Link>
+          <Link to="/register">
           <Button colorScheme="white" variant="outline">
             Register
           </Button>
+          </Link>
         </Stack>
       </Flex>
     </Box>
