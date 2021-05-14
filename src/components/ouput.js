@@ -15,8 +15,7 @@ const Output = (file) => {
     var rawMarkup = marked("_Nothing_ to show ");
     if (file.file) {
       rawMarkup = marked(file.file);
-      console.log(file.file);
-      console.log();
+      // console.log("file is", file);
     } else {
       rawMarkup = marked("_Nothing_ to show ");
     }
@@ -29,10 +28,9 @@ const Output = (file) => {
           <Tab>Output</Tab>
           <Tab>Preview</Tab>
         </TabList>
-
         <TabPanels>
           <TabPanel>
-            <Text>{file.file}</Text>
+            <Text whiteSpace="pre-line">{file.file}</Text>
           </TabPanel>
           <TabPanel>
             <div dangerouslySetInnerHTML={getMarkdownText()} />

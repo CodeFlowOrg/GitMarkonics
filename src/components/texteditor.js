@@ -38,8 +38,8 @@ export default class Texteditor extends Component {
   replacer(input) {
     // console.log(input);
     input = input
-      .replace(/<p>/g, "")
-      .replace(/<\/p>/g, "</br>")
+      .replace(/<p>/g, "<p>")
+      .replace(/<\/p>/g, "</p></br>")
       .replace(/<br>/g, "")
       .replace(/<strong>/g, "**")
       .replace(/<\/strong>/g, "**")
