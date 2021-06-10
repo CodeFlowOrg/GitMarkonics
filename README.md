@@ -74,19 +74,19 @@ To start contributing, follow the below guidelines:
 
 ## How to Update Your Github Forked Repository
 
-**1** 
+**1.** Lists the remote connections
 
     $ git remote -v
 
-**2** Adding the remote reporitory 
+**2.** Adding the remote reporitory 
     
     $ git remote add upstream https://github.com/CodeFlow201/GitMarkonics.git
 
-**3** Fetching The Upstream Repository
+**3.** Fetching The Upstream Repository
 
     $ git fetch upstream
 
-**4** Finally Merging with Upstream Repository
+**4.** Finally Merging with Upstream Repository
 
     $ git merge upstream/master
 
