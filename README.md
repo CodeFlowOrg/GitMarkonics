@@ -56,8 +56,10 @@ To start contributing, follow the below guidelines:
 
 **1.**  Fork [this](https://github.com/CodeFlow201/GitMarkonics.git) repository.
 
-**2.**  Follow the Environment setup above.
-
+**2.**  Clone your forked copy of the project.
+```
+ $ git clone https://github.com/<your_gihub_username>/GitMarkonics.git
+```
 **3.** Checkout into a new branch 
 
      $ git checkout -b <branch_name>
