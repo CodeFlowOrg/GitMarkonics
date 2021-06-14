@@ -138,6 +138,16 @@ If you need extra time, do comment on the issue and let the maintainer know.
 This project is focused on solution to maintain large documentation of their project without a need to look for markdown file previewer and garbage commits at Github.
 
 
+## Project Admin👨‍:
+
+<p align="center">
+<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
+</p>
+
+<a href="https://github.com/CodeFlow201">
+<h5 align="center"><b>Codeflow</b></a>
+
+
 ## 📌 Our valuable Contributors👩‍💻👨‍💻 :
 <table>
   <tr>
@@ -149,3 +159,15 @@ This project is focused on solution to maintain large documentation of their pro
   </tr>
 </table>
 
+
+## Code of Conduct
+<p align="center">
+<a href="https://github.com/CodeFlow201/GitMarkonics/blob/master/CODE_OF_CONDUCT.md">
+<img width=35% src="https://cdn-media-1.freecodecamp.org/images/1*v4jyaugHQXBSf2O4D66Onw.gif"></p>
+<h5 align="center"><b>Click to read</b></a>  
+
+## License 
+<p align="center">
+<a href="https://github.com/CodeFlow201/GitMarkonics/blob/master/LICENSE">
+<img width=35% src="https://media.tenor.com/images/68ecdcb63296f1db6532bf5b83051da9/tenor.gif"></p>
+<h5 align="center"><b>MIT License</b></a> 
