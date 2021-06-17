@@ -1,18 +1,22 @@
-![LogoMakr-9E4Yff](https://user-images.githubusercontent.com/73739820/121773936-e018f200-cb9c-11eb-9200-be3ad4eef565.png)
+<div align="center">
+  
+[![LogoMakr-9E4Yff](https://user-images.githubusercontent.com/73739820/121773936-e018f200-cb9c-11eb-9200-be3ad4eef565.png)](https://github.com/CodeFlow201/GitMarkonics)
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/CodeFlow201/GitMarkonics) 
+[![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/CodeFlow201/GitMarkonics) 
+[![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3)](https://github.com/CodeFlow201/GitMarkonics)
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/akshitadixit/VCallZer) [![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/akshitadixit/VCallZer) ![contributions welcome](https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=0059b3&style=flat-square)
+[![GitHub contributors](https://img.shields.io/github/contributors-anon/CodeFlow201/GitMarkonics)](https://github.com/CodeFlow201/GitMarkonics/graphs/contributors) 
+[![GitHub watchers](https://img.shields.io/github/watchers/CodeFlow201/GitMarkonics)](https://github.com/CodeFlow201/GitMarkonics/watchers)
+[![GitHub stars](https://img.shields.io/github/stars/CodeFlow201/GitMarkonics?color=yellow)](https://github.com/CodeFlow201/GitMarkonics/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/CodeFlow201/GitMarkonics?color=brightgreen)](https://github.com/CodeFlow201/GitMarkonics/network/members)
+[![GitHub issues](https://img.shields.io/github/issues-raw/CodeFlow201/GitMarkonics?color=blue)](https://github.com/CodeFlow201/GitMarkonics/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/CodeFlow201/GitMarkonics)](https://github.com/CodeFlow201/GitMarkonics/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub PRs](https://badgen.net/github/prs/CodeFlow201/GitMarkonics)](https://github.com/CodeFlow201/GitMarkonics/pulls)
+[![GitHub open PRs](https://img.shields.io/github/issues-pr-raw/CodeFlow201/GitMarkonics)](https://github.com/CodeFlow201/GitMarkonics/pulls)
+[![GitHub closed PRs](https://img.shields.io/github/issues-pr-closed-raw/CodeFlow201/GitMarkonics)](https://github.com/CodeFlow201/GitMarkonics/pulls?q=is%3Apr+is%3Aclosed)
 
-![GitHub contributors](https://img.shields.io/github/contributors-anon/akshitadixit/VCallZer) ![](https://badgen.net/github/stars/akshitadixit/VCallZer)
-![](https://badgen.net/github/forks/akshitadixit/VCallZer)
-![](https://badgen.net/github/open-issues/akshitadixit/VCallZer)
-![](https://badgen.net/github/closed-issues/akshitadixit/VCallZer)
-![](https://badgen.net/github/prs/akshitadixit/VCallZer)
-![](https://badgen.net/github/open-prs/akshitadixit/VCallZer)
-![](https://badgen.net/github/closed-prs/akshitadixit/VCallZer)
-
-[![GitHub forks](https://img.shields.io/github/forks/akshitadixit/VCallZer.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/jayant766/GitMarkonics/network)  [![GitHub stars](https://img.shields.io/github/stars/akshitadixit/VCallZer.svg?style=social&label=Star&maxAge=2592000)](https://github.com/CodeFlow201/GitMarkonics/stargazers/) [![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/watchers/)
-
+</div>
 
 
 
