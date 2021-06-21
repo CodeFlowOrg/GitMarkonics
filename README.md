@@ -1,6 +1,6 @@
 <div align="center">
   
-[![LogoMakr-9E4Yff](https://user-images.githubusercontent.com/73739820/121773936-e018f200-cb9c-11eb-9200-be3ad4eef565.png)](https://github.com/CodeFlow201/GitMarkonics)
+[![LogoMakr-9E4Yff](https://raw.githubusercontent.com/supzi-del/test-repo/main/GitMarkonics%20(1).jpg)](https://github.com/CodeFlow201/GitMarkonics)
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=github)](https://github.com/CodeFlow201/GitMarkonics) 
 [![Open Source Love](https://img.shields.io/badge/Open%20Source-%F0%9F%A4%8D-Green)](https://github.com/CodeFlow201/GitMarkonics) 
