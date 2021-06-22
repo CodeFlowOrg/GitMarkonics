@@ -61,7 +61,7 @@ function Login() {
                 }
               />
               <Input
-                type="tel"
+                type="password"
                 borderRadius="full"
                 placeholder="Password"
                 paddingLeft="60px"
