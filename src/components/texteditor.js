@@ -65,6 +65,7 @@ toggleBulletPoints(){
     })
 }
 
+
 // heading tags 
   handleHeadingChange(event) {
     this.onChange(
