@@ -5,12 +5,14 @@ import NavHeader from "./components/nav-head";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Register from './components/Register';
+import Forget from "./components/Forget";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
+          <Route path="/forget" > <Forget /> </Route>
           <Route path="/login">
             <Login />
           </Route>
