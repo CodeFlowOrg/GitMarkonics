@@ -112,9 +112,6 @@ function Register() {
               >
                 Register
               </Button>
-              <Link fontSize="sm" textDecoration="underline" color="blue">
-                Forgot password?
-              </Link>
             </HStack>
           </VStack>
         </div>
