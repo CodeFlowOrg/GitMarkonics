@@ -6,7 +6,7 @@ import "./texteditor.css";
 // import { convertToRaw } from "draft-js"; //important
 import { stateToHTML } from "draft-js-export-html";
 import { Flex, Box, Button, Stack, Icon, Select } from "@chakra-ui/react";
-import { GoBold, GoItalic, GoDesktopDownload, GoQuote } from "react-icons/go";
+import { GoBold, GoItalic,GoListOrdered,GoListUnordered, GoDesktopDownload, GoQuote } from "react-icons/go";
 import Output from "./ouput";
 import { options } from "marked";
 
@@ -19,6 +19,12 @@ const headersMap = [
   { label: "Header 5", style: "header-five" },
   { label: "Header 6", style: "header-six" }
 ];
+
+// const bulletTypes = [
+//   { label: "Bullets", style: "unordered-list-item" },
+//   { label: "Numbered", style: "ordered-list-item" }
+// ];
+
 export default class Texteditor extends Component {
   constructor(props) {
     super(props);
@@ -41,6 +47,8 @@ export default class Texteditor extends Component {
       .replace(/<p>/g, "<p>")
       .replace(/<\/p>/g, "</p>")
       .replace(/<br>/g, "")
+      .replace(/<bullets>/g,"<li>")
+      .replace(/<\/bullets>/g,"</li>")
       .replace(/<strong>/g, "**")
       .replace(/<\/strong>/g, "**")
       .replace(/&nbsp;/g, " ")
@@ -75,6 +83,8 @@ export default class Texteditor extends Component {
       RichUtils.toggleInlineStyle(this.state.editorState, "UNDERLINE")
     );
   }
+ 
+
   onDownload() {
     const hiddenElement = document.createElement("a");
 
@@ -91,6 +101,20 @@ export default class Texteditor extends Component {
   handleTextChange(event) {
     this.onChange(
       RichUtils.toggleBlockType(this.state.editorState, event.target.value)
+    );
+    this.setState({ value: event.target.value });
+  }
+
+  _onBulletClick(event) {
+    this.onChange(
+      RichUtils.toggleBlockType(this.state.editorState,'unordered-list-item')
+    );
+    this.setState({ value: event.target.value });
+  }
+
+  _onNumberClick(event) {
+    this.onChange(
+      RichUtils.toggleBlockType(this.state.editorState,'ordered-list-item')
     );
     this.setState({ value: event.target.value });
   }
@@ -128,6 +152,15 @@ export default class Texteditor extends Component {
               <Button onClick={this._onBlockQuoteClick.bind(this)}>
                 <Icon as={GoQuote} />
               </Button>
+        
+              <Button onClick={this._onBulletClick.bind(this)}>
+                <Icon as={GoListUnordered} />
+              </Button>
+
+              <Button onClick={this._onNumberClick.bind(this)}>
+                <Icon as={GoListOrdered} />
+              </Button>
+
               <Button onClick={this.onDownload.bind(this)}>
                 <Icon as={GoDesktopDownload} /> &nbsp;Download
               </Button>
