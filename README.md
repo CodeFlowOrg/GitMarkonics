@@ -124,11 +124,10 @@ To start contributing, follow the below guidelines:
 <h2>👍OpenSource Program</h2>
 
 This project is a part of this open source progam.
+- LGM-SOC 21
 
-<a href="https://github.com/prathimacode-hub"><img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/OpenSource%20Programs/LetsGrowMore%20Summer%20Of%20Code.jpg" width=150px height=150px /></a>
 
-
-## 📌 Guidelines for LGM-SOC'21
+## 📌 Guidelines 
 Expected time period for submitting a pull request for each level:
 - Level 1 - 1 Day
 - Level 2 - 2 Days
@@ -141,14 +140,16 @@ If you need extra time, do comment on the issue and let the maintainer know.
 This project is focused on solution to maintain large documentation of their project without a need to look for markdown file previewer and garbage commits at Github.
 
 
-## Project Admin👨‍:
+## Project Admin and Mentor👨‍:
 
 <p align="center">
-<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
+<a href="https://github.com/hkaur008">
+<h5 align="center">Project Admin: <b>Hargun Kaur</b></a>
 </p>
-
-<a href="https://github.com/CodeFlow201">
-<h5 align="center"><b>Codeflow</b></a>
+<p align="center">
+<a href="https://github.com/Yashnatani021-coder">
+<h5 align="center">Mentor: <b>Yash Natani</b></a>
+</p>
 
 
 ## 📌 Our valuable Contributors👩‍💻👨‍💻 :
