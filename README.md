@@ -140,14 +140,16 @@ If you need extra time, do comment on the issue and let the maintainer know.
 This project is focused on solution to maintain large documentation of their project without a need to look for markdown file previewer and garbage commits at Github.
 
 
-## Project Admin👨‍:
+## Project Admin and Mentor👨‍:
 
 <p align="center">
-<img width=20% src="https://i.postimg.cc/qBmW9QyM/hkaur008.gif">
-</p>
-
 <a href="https://github.com/hkaur008">
-<h5 align="center"><b>Hargun Kaur</b></a>
+<h5 align="center">Project Admin: <b>Hargun Kaur</b></a>
+</p>
+<p align="center">
+<a href="https://github.com/hkaur008">
+<h5 align="center">Mentor: <b>Yash Natani</b></a>
+</p>
 
 
 ## 📌 Our valuable Contributors👩‍💻👨‍💻 :
