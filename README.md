@@ -147,7 +147,7 @@ This project is focused on solution to maintain large documentation of their pro
 <h5 align="center">Project Admin: <b>Hargun Kaur</b></a>
 </p>
 <p align="center">
-<a href="https://github.com/hkaur008">
+<a href="https://github.com/Yashnatani021-coder">
 <h5 align="center">Mentor: <b>Yash Natani</b></a>
 </p>
 
