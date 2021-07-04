@@ -124,10 +124,10 @@ To start contributing, follow the below guidelines:
 <h2>👍OpenSource Program</h2>
 
 This project is a part of this open source progam.
-<img src="https://github.com/prathimacode-hub/prathimacode-hub/blob/main/OpenSource%20Programs/LetsGrowMore%20Summer%20Of%20Code.jpg" width=150px height=150px />
+- LGM-SOC 21
 
 
-## 📌 Guidelines for LGM-SOC'21
+## 📌 Guidelines 
 Expected time period for submitting a pull request for each level:
 - Level 1 - 1 Day
 - Level 2 - 2 Days
