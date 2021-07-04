@@ -144,11 +144,11 @@ This project is focused on solution to maintain large documentation of their pro
 ## Project Admin👨‍:
 
 <p align="center">
-<img width=20% src="https://i.postimg.cc/qBmW9QyM/profile.gif">
+<img width=20% src="https://i.postimg.cc/qBmW9QyM/hkaur008.gif">
 </p>
 
-<a href="https://github.com/CodeFlow201">
-<h5 align="center"><b>Codeflow</b></a>
+<a href="https://github.com/hkaur008">
+<h5 align="center"><b>Hargun Kaur</b></a>
 
 
 ## 📌 Our valuable Contributors👩‍💻👨‍💻 :
