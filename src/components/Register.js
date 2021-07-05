@@ -28,9 +28,10 @@ function Register() {
               fontSize="1.2rem"
               color="blue.500"
               fontWeight="semibold"
-              py={3}
+              className="Register_Here"
+              data-text="Register_Here..."
             >
-              Register HERE
+              Register_Here... 
             </Heading>
             <InputGroup w="95%" borderRadius="full">
               <Input

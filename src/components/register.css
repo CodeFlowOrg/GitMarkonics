@@ -1,68 +1,98 @@
-.Register{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      width:100%;
-      background-image: url("../assets/background-login.png");
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      background-position: center;
+.Register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../assets/background-login.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.Register__container {
+  width: 520px;
+  background-color: #fff;
+}
+.Register__containerTop {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e84983, #ea5682, #eb5e82, #ec6c82, #ee7a81);
+  padding: 28px 0 35px 0px;
+}
+.Register__img {
+  background-image: url("../assets/beautiful-readme-logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 257px;
+  height: 73.3px;
+  position: relative;
+  top: 14px;
+}
+.Register__containerTop p {
+  color: #f3cbcb;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+.Register__containerTop h4 {
+  color: #fefefe;
+  font-weight: bolder;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.Register__containerBottom {
+  padding-bottom: 28px;
+}
+.Register_Here {
+  position: relative;
+  font-size: 14vw;
+  color: #252839;
+  -webkit-text-stroke: 0.1vw #383d52;
+  text-transform: uppercase;
+  letter-spacing:2px;
+ margin:10px;
+}
+.Register_Here::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
   }
-  .Register__container{
-      width: 520px;
-      background-color: #fff;
+  70%,
+  90% {
+    width: 100%;
   }
-  .Register__containerTop{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(#E84983,#EA5682,#EB5E82,#EC6C82,#EE7A81);
-      padding: 28px 0 35px 0px;
-  }
-  .Register__img{
-     background-image: url("../assets/beautiful-readme-logo.png");
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 257px;
-     height: 73.3px;
-     position: relative;
-     top: 14px;
-  
-  }
-  .Register__containerTop p{
-      color: #f3cbcb;
-      font-weight: 400;
-      font-size: 0.95rem;
-  }
-  .Register__containerTop h4{
-      color: #FEFEFE;
-      font-weight: bolder;
-      margin-top: 40px;
-      font-size: 1.2rem;
-      letter-spacing: 1px;
-      
-  }
-  .Register__containerBottom{
-      padding-bottom: 28px;
-  }
-  .Register__btn{
-      margin-top: 27px !important;
-  }
-  .Register__input{
-      margin-top: 18px !important;
-  }
-  .RegisterBtn{
+}
+.Register__btn {
+  margin-top: 27px !important;
+}
+.Register__input {
+  margin-top: 18px !important;
+}
+.RegisterBtn {
   box-shadow: 5px 5px 5px -4px rgb(255, 0, 238);
   -webkit-box-shadow: 5px 5px 5px -4px rgb(255, 0, 238);
   -moz-box-shadow: 5px 5px 5px -4px rgb(255, 0, 238);
+}
+
+@media (max-width: 500px) {
+  .input__container {
+    width: 85% !important;
   }
-  
-  
-  @media(max-width:500px){
-      .input__container{
-          width: 85% !important;
-      }
-  }
+}
