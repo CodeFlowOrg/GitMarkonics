@@ -76,7 +76,7 @@ function Register() {
                 }
               />
               <Input
-                type="tel"
+                type="password"
                 borderRadius="full"
                 placeholder="Password"
                 paddingLeft="60px"
@@ -96,7 +96,7 @@ function Register() {
                 }
               />
               <Input
-                type="tel"
+                type="password"
                 borderRadius="full"
                 placeholder=" Confirm Password"
                 paddingLeft="60px"
@@ -112,9 +112,6 @@ function Register() {
               >
                 Register
               </Button>
-              <Link fontSize="sm" textDecoration="underline" color="blue">
-                Forgot password?
-              </Link>
             </HStack>
           </VStack>
         </div>
