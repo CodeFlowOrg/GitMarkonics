@@ -1,5 +1,6 @@
 import React from "react";
 import "./register.css";
+import Navbar from "./Navbar";
 import {
   Button,
   Heading,
@@ -15,6 +16,8 @@ import { RiLockPasswordFill } from "react-icons/ri";
 
 function Register() {
   return (
+    <>
+    <Navbar />
     <div className="Register">
       <div className="Register__container">
         <div className="Register__containerTop">
@@ -102,6 +105,9 @@ function Register() {
                 paddingLeft="60px"
               />
             </InputGroup>
+            <Link  fontSize="sm" textDecoration="underline" color="blue">
+                <a href="/login" >Have Account?</a>
+              </Link>
             <HStack className="Register__btn" alignSelf="flex-end">
               <Button
                 colorScheme="pink"
@@ -117,6 +123,7 @@ function Register() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

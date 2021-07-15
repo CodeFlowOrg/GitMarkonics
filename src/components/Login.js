@@ -1,5 +1,6 @@
 import React from "react";
 import "./Login.css";
+import Navbar from "./Navbar";
 import {
   Button,
   Heading,
@@ -16,6 +17,8 @@ import { RiLockPasswordFill } from "react-icons/ri";
 
 function Login() {
   return (
+    <>
+    <Navbar />
     <div className="login">
       <div className="login__container">
         <div className="login__containerTop">
@@ -68,6 +71,9 @@ function Login() {
                 paddingLeft="60px"
               />
             </InputGroup>
+            <Link  fontSize="sm" textDecoration="underline" color="blue">
+                <a href="/register" >Need Account ?</a>
+              </Link>
             <HStack className="login__btn" alignSelf="flex-end">
               <Button
                 colorScheme="pink"
@@ -86,6 +92,7 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

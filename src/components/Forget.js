@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Login.css";
+import Navbar from "./Navbar";
 import {
   Button,
   Heading,
@@ -16,6 +17,8 @@ import { RiLockPasswordFill } from "react-icons/ri";
 
 export default function Forget() {
     return (
+      <>
+      <Navbar />
         <div className="login">
       <div className="login__container">
         <div className="login__containerTop">
@@ -86,6 +89,7 @@ export default function Forget() {
         </div>
       </div>
     </div>
+    </>
     )
 }
 

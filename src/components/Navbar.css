@@ -1,0 +1,14 @@
+.logo{
+    margin-left: 200px;
+}
+.home{
+    margin-right: 200px;
+}
+@media screen and (max-width:858px) {
+    .logo{
+        margin-left: 100px;
+    }
+    .home{
+        margin-right: 100px;
+    }
+}
