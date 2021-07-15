@@ -6,7 +6,7 @@ import "./texteditor.css";
 // import { convertToRaw } from "draft-js"; //important
 import { stateToHTML } from "draft-js-export-html";
 import { Flex, Box, Button, Stack, Icon, Select } from "@chakra-ui/react";
-import { GoBold, GoItalic, GoDesktopDownload,GoListUnordered, GoQuote } from "react-icons/go";
+import { GoBold, GoItalic, GoDesktopDownload,GoListUnordered,GoListOrdered, GoQuote } from "react-icons/go";
 import Output from "./ouput";
 // import { options } from "marked";
 
@@ -55,14 +55,28 @@ export default class Texteditor extends Component {
     );
   }
 
-//undordered list
-toggleBulletPoints(){
-    this.setState({
-        editorState: RichUtils.toggleBlockType(
-            this.state.editorState,
-            'unordered-list-item'
-        )
-    })
+  //underline
+  _onUnderlineClick() {
+    this.onChange(
+      RichUtils.toggleInlineStyle(this.state.editorState, "UNDERLINE")
+    );
+  }
+ 
+
+//ordered list
+_onBulletClick(event) {
+  this.onChange(
+    RichUtils.toggleBlockType(this.state.editorState,'unordered-list-item')
+  );
+  this.setState({ value: event.target.value });
+}
+
+//ordered list
+_onNumberClick(event) {
+  this.onChange(
+    RichUtils.toggleBlockType(this.state.editorState,'ordered-list-item')
+  );
+  this.setState({ value: event.target.value });
 }
 
 
@@ -147,8 +161,11 @@ toggleBulletPoints(){
               <Button onClick={this._onBlockQuoteClick.bind(this)}>
                 <Icon as={GoQuote} />
               </Button>
-              <Button onClick={this.toggleBulletPoints.bind(this)}>
-              <Icon as={GoListUnordered} />
+              <Button onClick={this._onBulletClick.bind(this)}>
+                <Icon as={GoListUnordered} />
+              </Button>
+              <Button onClick={this._onNumberClick.bind(this)}>
+                <Icon as={GoListOrdered} />
               </Button>
               <Button onClick={this.onDownload.bind(this)}>
                 <Icon as={GoDesktopDownload} /> &nbsp;Download
