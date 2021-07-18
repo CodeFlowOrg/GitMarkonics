@@ -26,22 +26,24 @@ function App() {
         <
         Register / >
         <
-        /Route> <
+        /Route>   <
         Route path = "/contactus" >
         <
         ContactUs / >
         <
-        /Route> <
+        /Route>
+
+        <
         Route path = "/" >
         <
         NavHeader / >
         <
         Texteditor / >
         <
-        /Route> <
-        /Switch> <
-        /Router> <
-        /div>
+        /Route> < /
+        Switch > <
+        /Router> < /
+        div >
     );
 }
 
