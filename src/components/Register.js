@@ -1,5 +1,6 @@
 import React from "react";
 import "./register.css";
+import Navbar from "./Navbar";
 import {
   Button,
   Heading,
@@ -10,11 +11,13 @@ import {
   Link,
   VStack,
 } from "@chakra-ui/react";
-import { RiAccountPinBoxFill } from "react-icons/ri";
-import { RiLockPasswordFill } from "react-icons/ri";
+import { BsFillPersonFill } from "react-icons/bs";
+import { BsFillLockFill} from "react-icons/bs";
 
 function Register() {
   return (
+    <>
+    <Navbar />
     <div className="Register">
       <div className="Register__container">
         <div className="Register__containerTop">
@@ -52,7 +55,7 @@ function Register() {
                 margin="0 20px"
                 pointerEvents="none"
                 children={
-                  <RiAccountPinBoxFill color="#C6C6E8" fontSize="2.1rem" />
+                  <BsFillPersonFill color="#C6C6E8" fontSize="1.6rem" />
                 }
               />
               <Input
@@ -72,11 +75,11 @@ function Register() {
                 margin="0 20px"
                 pointerEvents="none"
                 children={
-                  <RiLockPasswordFill color="#C6C6E8" fontSize="2.1rem" />
+                  <BsFillLockFill color="#C6C6E8" fontSize="1.4rem" />
                 }
               />
               <Input
-                type="tel"
+                type="password"
                 borderRadius="full"
                 placeholder="Password"
                 paddingLeft="60px"
@@ -92,16 +95,19 @@ function Register() {
                 margin="0 20px"
                 pointerEvents="none"
                 children={
-                  <RiLockPasswordFill color="#C6C6E8" fontSize="2.1rem" />
+                  <BsFillLockFill color="#C6C6E8" fontSize="1.4rem" />
                 }
               />
               <Input
-                type="tel"
+                type="password"
                 borderRadius="full"
                 placeholder=" Confirm Password"
                 paddingLeft="60px"
               />
             </InputGroup>
+            <Link  fontSize="sm" textDecoration="underline" color="blue">
+                <a href="/login" >Have Account?</a>
+              </Link>
             <HStack className="Register__btn" alignSelf="flex-end">
               <Button
                 colorScheme="pink"
@@ -112,14 +118,12 @@ function Register() {
               >
                 Register
               </Button>
-              <Link fontSize="sm" textDecoration="underline" color="blue">
-                Forgot password?
-              </Link>
             </HStack>
           </VStack>
         </div>
       </div>
     </div>
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import "./Login.css";
 import Navbar from "./Navbar";
 import {
@@ -15,11 +15,11 @@ import { RiAccountPinBoxFill } from "react-icons/ri";
 import { RiLockPasswordFill } from "react-icons/ri";
 
 
-function Login() {
-  return (
-    <>
-    <Navbar />
-    <div className="login">
+export default function Forget() {
+    return (
+      <>
+      <Navbar />
+        <div className="login">
       <div className="login__container">
         <div className="login__containerTop">
           <div className="login__img"></div>
@@ -34,7 +34,7 @@ function Login() {
               fontWeight="semibold"
               py={3}
             >
-              USER LOGIN
+              FORGET PASSWORD
             </Heading>
             <InputGroup w="95%" borderRadius="full" bgColor="gray.200">
               <InputLeftElement
@@ -44,10 +44,10 @@ function Login() {
                   <RiAccountPinBoxFill color="#C6C6E8" fontSize="2.1rem" />
                 }
               />
-              <Input
+              <Input  required
                 borderRadius="full"
                 type="tel"
-                placeholder="Username"
+                placeholder="Email Address"
                 paddingLeft="60px"
               />
             </InputGroup>
@@ -65,15 +65,12 @@ function Login() {
                 }
               />
               <Input
-                type="password"
+                type="tel" required
                 borderRadius="full"
                 placeholder="Password"
                 paddingLeft="60px"
               />
             </InputGroup>
-            <Link  fontSize="sm" textDecoration="underline" color="blue">
-                <a href="/register" >Need Account ?</a>
-              </Link>
             <HStack className="login__btn" alignSelf="flex-end">
               <Button
                 colorScheme="pink"
@@ -82,10 +79,10 @@ function Login() {
                 fontWeight="bold"
                 className="loginBtn"
               >
-                LOGIN
+                SUBMIT
               </Button>
               <Link  fontSize="sm" textDecoration="underline" color="blue">
-                <a href="/forget" >Forgot password?</a>
+                <a href="/login" >Remember?</a>
               </Link>
             </HStack>
           </VStack>
@@ -93,7 +90,6 @@ function Login() {
       </div>
     </div>
     </>
-  );
+    )
 }
 
-export default Login;
