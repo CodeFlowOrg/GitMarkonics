@@ -6,7 +6,14 @@ import "./texteditor.css";
 // import { convertToRaw } from "draft-js"; //important
 import { stateToHTML } from "draft-js-export-html";
 import { Flex, Box, Button, Stack, Icon, Select } from "@chakra-ui/react";
-import { GoBold, GoItalic, GoDesktopDownload,GoListUnordered,GoListOrdered, GoQuote } from "react-icons/go";
+import {
+  GoBold,
+  GoItalic,
+  GoDesktopDownload,
+  GoListUnordered,
+  GoListOrdered,
+  GoQuote,
+} from "react-icons/go";
 import Output from "./ouput";
 // import { options } from "marked";
 
@@ -17,7 +24,7 @@ const headersMap = [
   { label: "Header 3", style: "header-three" },
   { label: "Header 4", style: "header-four" },
   { label: "Header 5", style: "header-five" },
-  { label: "Header 6", style: "header-six" }
+  { label: "Header 6", style: "header-six" },
 ];
 export default class Texteditor extends Component {
   constructor(props) {
@@ -35,20 +42,19 @@ export default class Texteditor extends Component {
     };
   }
 
-
-//toggles inline styling of the text to bold 
+  //toggles inline styling of the text to bold
   _onBoldClick() {
     this.onChange(RichUtils.toggleInlineStyle(this.state.editorState, "BOLD"));
   }
 
-//toggles inline styling of the text to italic
+  //toggles inline styling of the text to italic
   _onItalicClick() {
     this.onChange(
       RichUtils.toggleInlineStyle(this.state.editorState, "ITALIC")
     );
   }
 
-//blockqoute
+  //blockqoute
   _onBlockQuoteClick() {
     this.onChange(
       RichUtils.toggleBlockType(this.state.editorState, "blockquote")
@@ -61,26 +67,24 @@ export default class Texteditor extends Component {
       RichUtils.toggleInlineStyle(this.state.editorState, "UNDERLINE")
     );
   }
- 
 
-//ordered list
-_onBulletClick(event) {
-  this.onChange(
-    RichUtils.toggleBlockType(this.state.editorState,'unordered-list-item')
-  );
-  this.setState({ value: event.target.value });
-}
+  //ordered list
+  _onBulletClick(event) {
+    this.onChange(
+      RichUtils.toggleBlockType(this.state.editorState, "unordered-list-item")
+    );
+    this.setState({ value: event.target.value });
+  }
 
-//ordered list
-_onNumberClick(event) {
-  this.onChange(
-    RichUtils.toggleBlockType(this.state.editorState,'ordered-list-item')
-  );
-  this.setState({ value: event.target.value });
-}
+  //ordered list
+  _onNumberClick(event) {
+    this.onChange(
+      RichUtils.toggleBlockType(this.state.editorState, "ordered-list-item")
+    );
+    this.setState({ value: event.target.value });
+  }
 
-
-// heading tags 
+  // heading tags
   handleHeadingChange(event) {
     this.onChange(
       RichUtils.toggleBlockType(this.state.editorState, event.target.value)
@@ -89,10 +93,9 @@ _onNumberClick(event) {
   }
 
   replacer(input) {
-
     // console.log(input);
     input = input
-      .replace(/<p><br><\/p>/g, "<br>")  //order of pattern changing is crucial 
+      .replace(/<p><br><\/p>/g, "<br>") //order of pattern changing is crucial
       .replace(/<p>/g, "")
       .replace(/<\/p>/g, "<br>")
       .replace(/<strong>/g, "**")
@@ -124,7 +127,10 @@ _onNumberClick(event) {
     const hiddenElement = document.createElement("a");
     hiddenElement.href = "data:attachment/text," + encodeURI(this.state.file);
     hiddenElement.target = "_blank";
-    hiddenElement.download = prompt("Please enter name of markdown file", "README.md");
+    hiddenElement.download = prompt(
+      "Please enter name of markdown file",
+      "README.md"
+    );
     hiddenElement.click();
   }
 
@@ -137,6 +143,7 @@ _onNumberClick(event) {
             bg="#F0A6CA"
             border="0.5px"
             borderColor="#F0E6EF"
+            style={{ margin: 0, padding: "5px" }}
             p={1}
             m={2}
           >
