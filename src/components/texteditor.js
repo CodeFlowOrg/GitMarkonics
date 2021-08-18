@@ -171,9 +171,9 @@ export default class Texteditor extends Component {
               <Button onClick={this._onBulletClick.bind(this)}>
                 <Icon as={GoListUnordered} />
               </Button>
-              <Button onClick={this._onNumberClick.bind(this)}>
-                <Icon as={GoListOrdered} />
-              </Button>
+              {/* <Button onClick={this._onNumberClick.bind(this)}>
+                <Icon as={GoListOrdered} /> */}
+              {/* </Button> */}
               <Button onClick={this.onDownload.bind(this)}>
                 <Icon as={GoDesktopDownload} /> &nbsp;Download
               </Button>
