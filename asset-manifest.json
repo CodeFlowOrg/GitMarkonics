@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/GitMarkonics/static/css/main.c18ac53c.chunk.css",
-    "main.js": "/GitMarkonics/static/js/main.cc35d42b.chunk.js",
-    "main.js.map": "/GitMarkonics/static/js/main.cc35d42b.chunk.js.map",
-    "runtime-main.js": "/GitMarkonics/static/js/runtime-main.fee14696.js",
-    "runtime-main.js.map": "/GitMarkonics/static/js/runtime-main.fee14696.js.map",
+    "main.css": "/GitMarkonics/static/css/main.a4aa054c.chunk.css",
+    "main.js": "/GitMarkonics/static/js/main.d7c4ab03.chunk.js",
+    "main.js.map": "/GitMarkonics/static/js/main.d7c4ab03.chunk.js.map",
+    "runtime-main.js": "/GitMarkonics/static/js/runtime-main.ac7a2bce.js",
+    "runtime-main.js.map": "/GitMarkonics/static/js/runtime-main.ac7a2bce.js.map",
     "static/css/2.e426f036.chunk.css": "/GitMarkonics/static/css/2.e426f036.chunk.css",
-    "static/js/2.4ac91825.chunk.js": "/GitMarkonics/static/js/2.4ac91825.chunk.js",
-    "static/js/2.4ac91825.chunk.js.map": "/GitMarkonics/static/js/2.4ac91825.chunk.js.map",
-    "static/js/3.0a6a9de4.chunk.js": "/GitMarkonics/static/js/3.0a6a9de4.chunk.js",
-    "static/js/3.0a6a9de4.chunk.js.map": "/GitMarkonics/static/js/3.0a6a9de4.chunk.js.map",
+    "static/js/2.addd3869.chunk.js": "/GitMarkonics/static/js/2.addd3869.chunk.js",
+    "static/js/2.addd3869.chunk.js.map": "/GitMarkonics/static/js/2.addd3869.chunk.js.map",
+    "static/js/3.e9ee8188.chunk.js": "/GitMarkonics/static/js/3.e9ee8188.chunk.js",
+    "static/js/3.e9ee8188.chunk.js.map": "/GitMarkonics/static/js/3.e9ee8188.chunk.js.map",
     "index.html": "/GitMarkonics/index.html",
     "static/css/2.e426f036.chunk.css.map": "/GitMarkonics/static/css/2.e426f036.chunk.css.map",
-    "static/css/main.c18ac53c.chunk.css.map": "/GitMarkonics/static/css/main.c18ac53c.chunk.css.map",
-    "static/js/2.4ac91825.chunk.js.LICENSE.txt": "/GitMarkonics/static/js/2.4ac91825.chunk.js.LICENSE.txt",
+    "static/css/main.a4aa054c.chunk.css.map": "/GitMarkonics/static/css/main.a4aa054c.chunk.css.map",
+    "static/js/2.addd3869.chunk.js.LICENSE.txt": "/GitMarkonics/static/js/2.addd3869.chunk.js.LICENSE.txt",
     "static/media/GitMarkonics_white.36ad85f7.png": "/GitMarkonics/static/media/GitMarkonics_white.36ad85f7.png",
+    "static/media/contactus.css": "/GitMarkonics/static/media/Illustration.8cfb2d51.svg",
     "static/media/register.css": "/GitMarkonics/static/media/beautiful-readme-logo.83976531.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.fee14696.js",
+    "static/js/runtime-main.ac7a2bce.js",
     "static/css/2.e426f036.chunk.css",
-    "static/js/2.4ac91825.chunk.js",
-    "static/css/main.c18ac53c.chunk.css",
-    "static/js/main.cc35d42b.chunk.js"
+    "static/js/2.addd3869.chunk.js",
+    "static/css/main.a4aa054c.chunk.css",
+    "static/js/main.d7c4ab03.chunk.js"
   ]
 }
