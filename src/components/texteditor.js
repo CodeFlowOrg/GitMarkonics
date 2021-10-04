@@ -131,7 +131,8 @@ export default class Texteditor extends Component {
       "Please enter name of markdown file",
       "README.md"
     );
-    hiddenElement.click();
+
+    if(hiddenElement.download !== "null") hiddenElement.click();
   }
 
   render() {
