@@ -2,10 +2,13 @@ import React from "react";
 import "./contactus.css";
 import GitMarkonics from "../assets/GItMarkonIcsreadme.png"
 import { SocialIcon } from "react-social-icons";
+import Navbar from "./NavbarContact";
 
 function ContactUs() {
     return ( <
         div className = "contact" >
+        <
+        Navbar / >
 
         <
         div className = "contact__Packet" >
