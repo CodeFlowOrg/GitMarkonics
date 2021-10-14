@@ -27,19 +27,19 @@ function NavHeader() {
         Link to = "/" >
         <
         Button leftIcon = { < GrHome / > }
-        colorScheme = "yellow"
+        colorScheme = "blue"
         variant = "solid"
         className = "home" >
         Home <
         /Button> < /
         Link > <
-        Link to = "/register" >
+        Link to = "/login" >
         <
         Button leftIcon = { < GrLogin / > }
-        colorScheme = "red"
+        colorScheme = "yellow"
         variant = "solid"
-        className = "register" >
-        Register <
+        className = "login" >
+        Login <
         /Button> < /
         Link > <
         Link to = "/contactus" >

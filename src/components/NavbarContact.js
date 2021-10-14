@@ -1,7 +1,7 @@
 import React from "react";
 import "./nav-head.css";
 import "./Navbar.css";
-import { GrContact, GrHome, GrLogin } from "react-icons/gr";
+import { GrHome, GrLogin } from "react-icons/gr";
 import { Button, Spacer, Flex, Stack, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 
@@ -27,32 +27,32 @@ function NavHeader() {
         Link to = "/" >
         <
         Button leftIcon = { < GrHome / > }
-        colorScheme = "yellow"
+        colorScheme = "purple"
         variant = "solid"
         className = "home" >
         Home <
-        /Button> < /
-        Link > <
+        /Button> <
+        /Link> <
+        Link to = "/login" >
+        <
+        Button leftIcon = { < GrLogin / > }
+        colorScheme = "blue"
+        variant = "solid"
+        className = "login" >
+        Login <
+        /Button> <
+        /Link> <
         Link to = "/register" >
         <
         Button leftIcon = { < GrLogin / > }
-        colorScheme = "red"
+        colorScheme = "orange"
         variant = "solid"
-        className = "register" >
+        className = "login" >
         Register <
-        /Button> < /
-        Link > <
-        Link to = "/contactus" >
-        <
-        Button leftIcon = { < GrContact / > }
-        colorScheme = "green"
-        variant = "solid"
-        className = "contactus" >
-        ContactUs <
-        /Button> < /
-        Link > <
-        /Stack> < /
-        Flex > <
+        /Button> <
+        /Link> <
+        /Stack> <
+        /Flex> <
         /Box>
     );
 }
