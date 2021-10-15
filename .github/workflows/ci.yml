@@ -1,0 +1,37 @@
+name: Build and Test
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ${{matrix.os}}
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+
+        node-version:
+          - 14.x
+          - 16.x
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+   
+      - name: Install dependencies
+        run: |
+          npm
+          pushed client
+          npm
+          popd
+      - name: Build the project
+        run: npm run start
