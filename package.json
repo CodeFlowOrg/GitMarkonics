@@ -18,11 +18,13 @@
     "framer-motion": "^4.1.9",
     "marked": "^2.0.3",
     "react": "^17.0.2",
+    "react-copyright": "0.0.1",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-refresh": "^0.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
+    "react-scroll-to-top": "^1.0.5",
     "react-social-icons": "^5.6.1",
     "save": "^2.4.0",
     "web-vitals": "^1.1.1"

@@ -11,7 +11,7 @@ import {
   GoItalic,
   GoDesktopDownload,
   GoListUnordered,
-  GoListOrdered,
+  //GoListOrdered,
   GoQuote,
 } from "react-icons/go";
 import Output from "./ouput";

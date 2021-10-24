@@ -1,0 +1,11 @@
+.footer {
+  z-index: 1;
+  background-color: #210124;
+  color :white;
+  font-size: calc(10px + 1vmin);
+}
+
+.p{
+  text-align: center;
+}
+
